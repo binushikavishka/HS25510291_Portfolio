@@ -52,10 +52,10 @@ body {
 }
 .sidebar .btn:hover {
   background: #00a896;
-  padding: 0.5rem 1rem;
 }
 .sidebar nav ul {
   list-style: none;
+  padding: 0.5rem 1rem;
 }
 .sidebar nav ul li {
   margin: 1rem 0;
