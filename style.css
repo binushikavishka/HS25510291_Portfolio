@@ -117,6 +117,27 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Hobbies */
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+.hobbies-grid .card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.hobbies-grid .card:hover {
+  background: #028090;
+  color: white;
+  transform: translateY(-5px);
+}
+
 /* Responsive */
 @media(max-width: 768px) {
   body {
