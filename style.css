@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: #05668d;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+}
+.sidebar .profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.sidebar h1 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+.sidebar p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+.sidebar .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #028090;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+}
+.sidebar .btn:hover {
+  background: #00a896;
+}
+.sidebar nav ul {
+  list-style: none;
+}
+.sidebar nav ul li {
+  margin: 1rem 0;
+}
+.sidebar nav ul li a {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.sidebar nav ul li a:hover {
+  color: #d4f0f0;
+}
+
+/* Main content */
+main {
+  margin-left: 260px;
+  padding: 2rem;
+  flex: 1;
+}
+section {
+  margin-bottom: 3rem;
+}
+h2 {
+  color: #05668d;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+.skills-grid span {
+  display: block;
+  background: #028090;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.skills-grid span:hover {
+  background: #00a896;
+}
+a {
+  color: #028090;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+  .sidebar nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+  main {
+    margin-left: 0;
+  }
+}
