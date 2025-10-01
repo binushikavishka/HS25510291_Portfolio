@@ -27,10 +27,11 @@ body {
 .sidebar .profile img {
   width: 120px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 80%;
   border: 4px solid #fff;
   object-fit: cover;
   margin-bottom: 1rem;
+  align: center;
 }
 .sidebar h1 {
   font-size: 1.3rem;
